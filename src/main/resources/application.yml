@@ -1,0 +1,43 @@
+book:
+  author: zcx
+  name: spring boot
+spring:
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jackson:
+    serialization:
+      indent_output: true
+  mail:
+    host: hwhzsmtp.qiye.163.com
+    port: 994
+    username: manager@harmonicchannel.cn
+    password: Hmyy810920
+    default-encoding: UTF-8
+    emailSubject: 推送消息失败通知
+#server:
+#  tomcat:
+#    mbeanregistry:
+#      enable: true
+#management:
+#  endpoint:
+#    restart:
+#      enabled: true
+
+#不采取logback打印日志采用log4j2.xml
+#logging:
+#  pattern:
+#    #格式化，只能输出日期和内容
+#    console: "%d %-5p [%c{5}] - %m%n"
+#  #配置日志输出位置
+#  path: e:/
+#  #配置日志输出文件 ，指定文件名
+#  file: e:/demo.log
+#  level:
+#    com.example.demo: DEBUG
+#xml方式
+#logging:
+#  config: classpath:log4j2.xml
